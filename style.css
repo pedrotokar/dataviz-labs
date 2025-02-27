@@ -40,7 +40,7 @@ nav a:hover{
 	border-bottom-color: var(--accent-strong)/*#676767*/;
 	background-color: var(--accent-light)
 }
-
+/*
 input,textarea,button {
 	font: inherit;
 }
@@ -56,4 +56,18 @@ input, textarea, button {
 
 label {
 	margin-block: 1rem;
+}*/
+form{
+	display: grid;
+	grid-template-columns: auto 1fr;
+	gap: 1em;
+}
+
+form label{
+	display: grid;
+	grid-template-columns: subgrid;
+}
+
+#button, label{
+	grid-column: 1 / -1;
 }
